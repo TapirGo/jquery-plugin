@@ -2,7 +2,7 @@ h1. TapirGo JQuery plugin
 
 An plugin that makes searching with TapirGo a breeze!
 
-Live example at "http://tapirgo.com/jquery-plugin/index.html":http://tapirgo.com/jquery-plugin/index.html
+Live example at "http://tapirgo.com/examples/jquery-plugin/index.html":http://tapirgo.com/examples/jquery-plugin/index.html
 
 h2. Using the plugin.
 

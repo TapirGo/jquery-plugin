@@ -1,0 +1,37 @@
+h1. TapirGo JQuery plugin
+
+An plugin that makes searching with TapirGo a breeze!
+
+Live example at "http://tapirgo.com/jquery-plugin/index.html":http://tapirgo.com/jquery-plugin/index.html
+
+h2. Using the plugin.
+
+1. Make sure you have JQuery in your site.
+2. Add the jquery-tapirgo.js to your site.
+3. Add the tapirgo call to your source. (see example)
+
+example:
+
+<pre><code>
+  <!DOCTYPE html>
+
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Tapirgo jQuery plugin example</title>
+    </head>
+
+    <body>
+
+      <div id="search_results"></div>
+
+      <script src="jquery-1.6.1.min.js"></script>
+      <script src="jquery-tapirgo.js"></script>
+      <script>
+        $('#search_results').tapirgo({'token': '4dbfc79e3f61b05b53000011'});
+      </script>
+
+    </body>
+  </html>
+</code></pre>
+

@@ -1,14 +1,14 @@
-h1. TapirGo jQuery plugin
+h1. Tapir jQuery plugin
 
-A plugin that makes searching with TapirGo a breeze!
+A plugin that makes searching with Tapir a breeze!
 
-Live example at "http://tapirgo.com/examples/jquery-plugin/index.html":http://tapirgo.com/examples/jquery-plugin/index.html
+Check out the "live example":http://tapirgo.com/examples/jquery-plugin/index.html
 
 h2. Using the plugin
 
 1. Make sure you have jQuery in your site (any version above 1.2 should work).
-2. Add the jquery-tapirgo.min.js to your site.
-3. Call tapirgo() on the element you want the results to appear in.
+2. Add the jquery-tapir.min.js to your site.
+3. Call tapir() on the element you want the results to appear in.
 
 example:
 
@@ -18,7 +18,7 @@ example:
   <html>
     <head>
       <meta charset="utf-8">
-      <title>TapirGo jQuery plugin example</title>
+      <title>Tapir jQuery plugin example</title>
     </head>
 
     <body>
@@ -26,9 +26,9 @@ example:
       <div id="search_results"></div>
 
       <script src="jquery-1.6.1.min.js"></script>
-      <script src="jquery-tapirgo.min.js"></script>
+      <script src="jquery-tapir.min.js"></script>
       <script>
-        $('#search_results').tapirgo({'token': '4dbfc79e3f61b05b53000011'});
+        $('#search_results').tapir({'token': '4dbfc79e3f61b05b53000011'});
       </script>
 
     </body>

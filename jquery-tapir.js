@@ -6,10 +6,10 @@
     init: function(options) {
       el = this;
 
-      settings =  {
-                    token: false,
-                    query_param: 'query'
-                  };
+      settings = {
+                   token: false,
+                   query_param: 'query'
+                 };
 
       if (options) {
         $.extend(settings, options);
@@ -21,6 +21,7 @@
 
       $.getJSON(
         'http://tapirgo.com/api/1/search.json?token=' + settings.token + '&query=' + paramValue(settings.query_param) + '&callback=?', function(data){
+          if(settings['complete']) { settings.complete() }
           $.each(data, function(key, val) {
             el.append('<div class="result"><h3><a href="' + val.link + '">' + val.title + '</a></h3><p>' + val.summary + '</p></div>');
           });

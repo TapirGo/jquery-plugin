@@ -39,9 +39,10 @@ h2. Options
 
 h3. Complete
 
-If you pass a function as a @complete@-option, your function will be executed when the search is complete and the results have been returned, right before they're appended to the page:
+If you pass a function as a @complete@-option, your function will be executed when the search is complete and the results have been returned, right before they're appended to the page.  Additionally, you can pass a function as a @process@-option that will allow you to make modifications per result (the following example truncates each result to 50 words):
 
 bc. $('#search_results').tapir({
   'token': '4dbfc79e3f61b05b53000021',
-  'complete' : function() { alert("I'm done searching!"); }
+  'complete' : function() { alert("I'm done searching!"); },
+  'process' : function(result) { result.summary = result.summary.split(' ', 50).join(' ') + '...'; return result; }
 });

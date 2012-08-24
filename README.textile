@@ -45,3 +45,11 @@ bc. $('#search_results').tapir({
   'token': '4dbfc79e3f61b05b53000021',
   'complete' : function() { alert("I'm done searching!"); }
 });
+
+h3. Query parameter option
+
+By default, the query parameter is '@query@', but with the @query_param@ option, you can change it to what ever you want.
+
+h3. Query option
+
+If you directly specify the @query@ option, the library will do a call with the given option and display the result in the element.

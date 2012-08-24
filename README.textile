@@ -2,7 +2,7 @@ h1. Tapir jQuery plugin
 
 A plugin that makes searching with Tapir a breeze!
 
-Check out the "live example":http://tapirgo.com/examples/jquery-plugin/index.html
+Check out the "live example":http://sp4ce.net/tapir/example.html
 
 h2. Using the plugin
 

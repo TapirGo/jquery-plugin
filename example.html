@@ -4,21 +4,37 @@
   <head>
     <meta charset="utf-8">
     <title>Tapir jQuery plugin example</title>
-  </head>
-
-  <body>
-    <h1>Tapir jQuery plugin example</h1>
-    <p>Call this page with the following params: ?query=example or <a href="?query=example">click this link</a>.</p>
-    <p>Results will be placed in the "search_results" div.</p>
-    <h2>Search results:</h2>
-    <div id="search_results">
-    </div>
-
     <script src="jquery-1.6.1.min.js"></script>
     <script src="jquery-tapir.min.js"></script>
     <script>
+      // example 1 code
+      $('#search_results').tapir({token: '4dce6da43f61b05bff000052'});
+
+      // example 2 code
+      $('input[name="search"]').click(function(e) {
+        $('#search_results').tapir({
+          token: '4dce6da43f61b05bff000052',
+          query: $('input[name="query"]').val()
+        });
+      })
       $('#search_results').tapir({'token': '4dce6da43f61b05bff000052'});
     </script>
+  </head>
+
+  <body>
+    <h1>Tapir jQuery plugin examples</h1>
+    
+    <h2>With ?query=example in the URL</h2>
+    <p>Call this page with the following params: ?query=example or <a href="?query=example">click this link</a>.</p>
+    <p>Results will be placed in the "search_results" div.</p>    
+    
+    <h2>With full javascript form</h2>
+    <input type="text" name="query"/>
+    <input type="button" name="search"/>
+    <p>Results will be placed in the "search_results" div.</p>    
+    
+    <h2>Search results:</h2>
+    <div id="search_results"></div>
 
   </body>
 </html>

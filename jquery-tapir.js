@@ -40,24 +40,25 @@
   // The function that display the result of the search
   function displayResult(el, data, complete) {
     // Call the complete callback if needed.
-    if(complete) { 
-      complete(); 
+    if(complete) {
+      complete();
     }
-    
+
     // The result
+    el.empty();
     $.each(data, function(key, val) {
-      el.append('<div class="result"><h3><a href="' + val.link + '">' 
-                + val.title + '</a></h3><p>' 
+      el.append('<div class="result"><h3><a href="' + val.link + '">'
+                + val.title + '</a></h3><p>'
                 + val.summary + '</p></div>');
     });
   };
 
   // The function that create the URL that makes the request to the Tapir API.
   function createUrl(token, query) {
-    return 'http://tapirgo.com/api/1/search.json?token=' 
-           + token 
-           + '&query=' 
-           + query 
+    return 'http://tapirgo.com/api/1/search.json?token='
+           + token
+           + '&query='
+           + query
            + '&callback=?';
   };
 
